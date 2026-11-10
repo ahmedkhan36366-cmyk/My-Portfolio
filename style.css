@@ -227,6 +227,40 @@ header nav a {
     .contact-form { max-width: none; }
 }
 
+/* Keep the mobile layout on touch phones even if the browser requests desktop site. */
+@media (pointer: coarse) and (max-device-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 24px;
+        padding: 20px;
+    }
+
+    header nav {
+        order: 3;
+        flex: 1 0 100%;
+        justify-content: center;
+    }
+
+    header nav > div {
+        justify-content: center;
+        gap: 12px 24px;
+    }
+
+    .about {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 36px;
+        padding: 40px 24px;
+    }
+
+    .about-content { width: 100%; }
+    .div { flex: 0 1 auto; }
+    .div img { width: min(72vw, 300px); }
+    .contact-form { max-width: none; }
+}
+
 @media (max-width: 420px) {
     header { padding: 18px 16px; }
     header nav > div { gap: 10px 16px; }
