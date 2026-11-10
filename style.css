@@ -140,7 +140,7 @@ header {
 }
 
 .work:hover {
-    color: red;
+    color: rgb(236, 5, 5);
 }
 .contact:hover{
     color: gray;
